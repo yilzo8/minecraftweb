@@ -4,26 +4,36 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    background-image: url('https://example.com/path-to-minecraft-background.png'); /* 添加Minecraft風格的背景 */
+    background-repeat: repeat;
 }
 
 header {
-    background-color: #339966;
+    background-color: #4CAF50; /* 更接近Minecraft草地的顏色 */
     color: white;
     padding: 20px;
     text-align: center;
+    font-family: 'Minecraft', sans-serif; /* 使用Minecraft風格的字體 */
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
+    font-family: 'Minecraft', sans-serif;
+    color: #ffeb3b; /* 黃色，類似Minecraft中的黃金顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 為標題增加陰影效果 */
 }
 
 p {
     font-size: 1.2em;
+    line-height: 1.6;
 }
 
 section {
     padding: 20px;
+    background-color: #fff;
+    border: 2px solid #4CAF50; /* Minecraft綠色邊框 */
+    border-radius: 10px;
 }
 
 #characters {
@@ -31,6 +41,7 @@ section {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 .character {
@@ -38,7 +49,8 @@ section {
 }
 
 .character h3 {
-    color: #339966;
+    color: #4CAF50;
+    font-family: 'Minecraft', sans-serif;
 }
 
 #quiz {
@@ -50,20 +62,24 @@ section {
 
 #quiz h2 {
     color: #00796b;
+    font-family: 'Minecraft', sans-serif;
 }
 
 button {
-    background-color: #339966;
+    background-color: #4CAF50; /* Minecraft草地顏色 */
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Minecraft', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    background-color: #2e7d32;
+    background-color: #388e3c; /* 更深的綠色 */
+    transform: scale(1.05); /* 增加縮放效果 */
 }
 
 footer {
@@ -79,3 +95,4 @@ footer {
 #result {
     margin-top: 20px;
 }
+
