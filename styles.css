@@ -1,4 +1,4 @@
-/* 全局字體設置 */
+/* 全局字體和背景 */
 body {
     font-family: 'Press Start 2P', sans-serif; /* 使用像素風格字體 */
     background-color: #f4f4f4;
@@ -7,44 +7,93 @@ body {
     padding: 0;
 }
 
-/* header */
 header {
     background-color: #4CAF50; /* 草地綠色 */
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    font-family: 'Press Start 2P', sans-serif;
 }
 
-/* 主要角色區域 */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* 角色介紹區 */
 #characters {
-    background-color: #fff;
+    padding: 20px;
+}
+
+.character {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #4CAF50;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .character h3 {
     color: #4CAF50;
-    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.8em;
 }
 
-/* 測驗區域 */
-#quiz {
-    background-color: #e0f7fa;
+.character p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* 創意建設區 */
+#creativity {
     padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 測驗區 */
+#quiz {
+    padding: 20px;
+    background-color: #e0f7fa;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #quiz h2 {
     color: #00796b;
-    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2em;
 }
 
 button {
-    background-color: #4CAF50; /* 草地綠色 */
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -60,17 +109,30 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* footer */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 #result {
     margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
 }
