@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 網頁介紹</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minecraft 世界介紹</h1>
+        <p>探索像素化的世界，發掘無限的創造與冒險！</p>
+    </header>
+
+    <section id="characters">
+        <h2>主要角色介紹</h2>
+        <div class="character">
+            <h3>Steve</h3>
+            <p>Steve 是 Minecraft 的標誌性角色，他是玩家最熟悉的角色，帶著藍色襯衫與紫色褲子，是你的冒險夥伴。</p>
+        </div>
+        <div class="character">
+            <h3>Alex</h3>
+            <p>Alex 是 Minecraft 中另一個可選角色，紅髮，綠色襯衫，和 Steve 一起展開創造與探索的旅程。</p>
+        </div>
+        <div class="character">
+            <h3>Creeper</h3>
+            <p>Creeper 是遊戲中最具威脅性的敵對生物，經常無聲無息地靠近玩家並進行爆炸，毀滅建築和生命。</p>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>你的 Minecraft 個性是什麼？</h2>
+        <p>回答以下幾個問題，看看你更像 Minecraft 中的哪個角色！</p>
+        <form id="quizForm">
+            <label>1. 你最喜歡的遊戲模式是什麼？</label><br>
+            <input type="radio" name="mode" value="創造模式"> 創造模式<br>
+            <input type="radio" name="mode" value="生存模式"> 生存模式<br>
+            <input type="radio" name="mode" value="冒險模式"> 冒險模式<br><br>
+
+            <label>2. 你喜歡如何開始遊戲？</label><br>
+            <input type="radio" name="start" value="建造房屋"> 建造房屋<br>
+            <input type="radio" name="start" value="挖掘資源"> 挖掘資源<br>
+            <input type="radio" name="start" value="探索新地區"> 探索新地區<br><br>
+
+            <label>3. 你遇到敵人時會怎麼做？</label><br>
+            <input type="radio" name="enemy" value="正面對抗"> 正面對抗<br>
+            <input type="radio" name="enemy" value="迅速逃跑"> 迅速逃跑<br>
+            <input type="radio" name="enemy" value="建造陷阱"> 建造陷阱<br><br>
+
+            <button type="button" onclick="submitQuiz()">提交測驗</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minecraft 愛好者網頁</p>
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById('quizForm');
+            const mode = form.elements['mode'].value;
+            const start = form.elements['start'].value;
+            const enemy = form.elements['enemy'].value;
+            let resultText = '';
+
+            if (mode === '創造模式' && start === '建造房屋') {
+                resultText = '你更像 Steve，喜歡建造並享受創造的樂趣！';
+            } else if (mode === '生存模式' && enemy === '正面對抗') {
+                resultText = '你像 Alex，勇敢面對挑戰，擁有強大的生存技能！';
+            } else if (enemy === '建造陷阱') {
+                resultText = '你是 Creeper 的化身，喜歡策略性地進行攻擊。';
+            } else {
+                resultText = '你是一個探索者，喜歡冒險與自由！';
+            }
+
+            document.getElementById('result').innerHTML = '<h3>結果：</h3><p>' + resultText + '</p>';
+        }
+    </script>
+</body>
+</html>
