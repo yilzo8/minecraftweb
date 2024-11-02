@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header */
 header {
     background-color: #4CAF50; /* 草地綠色 */
     color: white;
@@ -85,6 +86,7 @@ p {
     background-color: #e0f7fa;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 #quiz h2 {
@@ -92,6 +94,7 @@ p {
     font-size: 2em;
 }
 
+/* 按鈕樣式 */
 button {
     background-color: #4CAF50;
     color: white;
@@ -109,15 +112,40 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* 新增的區域：遊戲歷史 */
+#history {
+    padding: 20px;
+    background-color: #FFF9C4; /* 柔和黃色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#history h2 {
+    color: #F57F17;
+    font-size: 2em;
+}
+
+/* 新增的區域：遊戲評價 */
+#reviews {
+    padding: 20px;
+    background-color: #F8BBD0; /* 淡粉色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#reviews h2 {
+    color: #880E4F;
+    font-size: 2em;
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     font-size: 0.9em;
 }
 
@@ -131,8 +159,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* 結果區 */
 #result {
     margin-top: 20px;
     font-size: 1.2em;
     text-align: center;
+}
+
+/* 調整頁腳固定 */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
