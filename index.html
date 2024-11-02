@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft 世界介紹</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- Header 部分 -->
@@ -18,45 +17,38 @@
     <section id="characters">
         <h2>主要角色介紹</h2>
         <div class="character">
-            <img src="https://via.placeholder.com/150" alt="Steve" class="character-img">
             <h3>Steve</h3>
-            <p>Steve 是 Minecraft 的標誌性角色，他是玩家最熟悉的角色，帶著藍色襯衫與紫色褲子，是你的冒險夥伴。甚至還有關於Steve的都市傳說!!</p>
+            <p>Steve 是 Minecraft 的標誌性角色，他是玩家最熟悉的角色，帶著藍色襯衫與紫色褲子，是你的冒險夥伴。</p>
         </div>
+
         <div class="character">
-            <img src="https://via.placeholder.com/150" alt="Alex" class="character-img">
             <h3>Alex</h3>
-            <p>Alex 是 Minecraft 中另一個可選角色，紅髮，綠色襯衫，和 Steve 一起展開創造與探索的旅程，算是很普通的角色，新手沒有皮膚時會使用。</p>
+            <p>Alex 是 Minecraft 中另一個可選角色，紅髮，綠色襯衫，和 Steve 一起展開創造與探索的旅程。</p>
         </div>
+
         <div class="character">
-            <img src="https://via.placeholder.com/150" alt="Creeper" class="character-img">
             <h3>Creeper</h3>
-            <p>Creeper 是遊戲中最具威脅性的敵對生物，經常無聲無息地靠近玩家並進行爆炸，毀滅建築和生命。當你建築蓋到一半時，他會悄悄幫你全部炸光!!</p>
+            <p>Creeper 是遊戲中最具威脅性的敵對生物，經常無聲無息地靠近玩家並進行爆炸，毀滅建築和生命。</p>
         </div>
     </section>
 
-    <!-- 新增的區域：遊戲歷史 -->
-    <section id="history">
-        <h2>Minecraft 的遊戲歷史</h2>
-        <p>Minecraft 由 Markus Persson 在 2009 年首次發布。這款遊戲逐漸發展成為世界上最受歡迎的沙盒遊戲之一，吸引了全球數百萬玩家。</p>
-        <button id="toggleHistory">隱藏/顯示歷史內容</button>
-    </section>
-
-    <!-- 創意建設區域 -->
-    <section id="creativity">
-        <h2>創意建設區</h2>
-        <p>在 Minecraft 的世界中，創造無限可能。讓我們一起來看看一些玩家的創意建築！</p>
-        <div class="gallery">
-            <img src="https://th.bing.com/th/id/R.a57fe4cc34fd80677b7d9bc0542c14a2?rik=cZkjVfxugcC3zw&pid=ImgRaw&r=0/300" alt="建築1">
-            <img src="https://th.bing.com/th/id/R.a57fe4cc34fd80677b7d9bc0542c14a2?rik=cZkjVfxugcC3zw&pid=ImgRaw&r=0/300" alt="建築2">
-            <img src="https://th.bing.com/th/id/R.a57fe4cc34fd80677b7d9bc0542c14a2?rik=cZkjVfxugcC3zw&pid=ImgRaw&r=0/300" alt="建築3">
+    <!-- 實況主介紹區域 -->
+    <section id="streamers">
+        <h2>知名實況主介紹</h2>
+        <div class="streamer">
+            <h3>夢（Dream）</h3>
+            <p>夢是一位非常受歡迎的 Minecraft 實況主，以其創意的遊戲風格和出色的遊戲技巧而聞名。他的速度通關挑戰和遊戲玩法吸引了大量粉絲。</p>
         </div>
-    </section>
 
-    <!-- 新增的區域：遊戲評價 -->
-    <section id="reviews">
-        <h2>玩家的遊戲評價</h2>
-        <p>許多玩家表示 Minecraft 是一款讓人放鬆且充滿創意的遊戲。玩家可以自由選擇創造或生存模式，帶來不同的體驗。</p>
-        <button id="toggleReviews">隱藏/顯示評價</button>
+        <div class="streamer">
+            <h3>傑克（Jacksepticeye）</h3>
+            <p>傑克是一位著名的遊戲實況主，以其高能量和幽默感而著稱。他的 Minecraft 實況影片經常帶給觀眾歡笑和娛樂。</p>
+        </div>
+
+        <div class="streamer">
+            <h3>佩爾（PewDiePie）</h3>
+            <p>佩爾是 YouTube 上最受歡迎的實況主之一，他的 Minecraft 系列影片讓他重新燃起對遊戲的熱情。他的幽默風格和獨特的個性使他的內容備受喜愛。</p>
+        </div>
     </section>
 
     <!-- 測驗區 -->
@@ -81,25 +73,16 @@
 
             <button type="button" onclick="submitQuiz()">提交測驗</button>
         </form>
+
         <div id="result"></div>
     </section>
 
     <!-- Footer 部分 -->
     <footer>
-        <p>&copy; 2024 Minecraft 世界介紹 | <a href="#">隱私政策</a> | <a href="#">聯絡我們</a></p>
+        <p>&copy; 2024 Minecraft 曹圓圓的網頁 | <a href="#">隱私政策</a> | <a href="#">聯絡我們</a></p>
     </footer>
 
     <script>
-        // JQuery 用來控制顯示/隱藏區域
-        $(document).ready(function() {
-            $('#toggleHistory').click(function() {
-                $('#history p').toggle();
-            });
-            $('#toggleReviews').click(function() {
-                $('#reviews p').toggle();
-            });
-        });
-
         function submitQuiz() {
             const form = document.getElementById('quizForm');
             const mode = form.elements['mode'].value;
