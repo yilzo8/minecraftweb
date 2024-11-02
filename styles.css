@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #4CAF50; /* 草地綠色 */
     color: white;
@@ -32,19 +31,10 @@ p {
 
 .character {
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
     border: 2px solid #4CAF50;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.character-img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    border-radius: 10px;
 }
 
 .character h3 {
@@ -57,27 +47,21 @@ p {
     line-height: 1.6;
 }
 
-/* 創意建設區 */
-#creativity {
+/* 實況主介紹區 */
+#streamers {
     padding: 20px;
     background-color: #e0f7fa;
     border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.gallery img {
-    margin: 10px;
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+.streamer {
+    margin-bottom: 20px;
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.streamer h3 {
+    color: #00796b;
+    font-size: 1.8em;
 }
 
 /* 測驗區 */
@@ -86,7 +70,6 @@ p {
     background-color: #e0f7fa;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 #quiz h2 {
@@ -94,7 +77,6 @@ p {
     font-size: 2em;
 }
 
-/* 按鈕樣式 */
 button {
     background-color: #4CAF50;
     color: white;
@@ -112,63 +94,12 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 新增的區域：遊戲歷史 */
-#history {
-    padding: 20px;
-    background-color: #FFF9C4; /* 柔和黃色背景 */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-#history h2 {
-    color: #F57F17;
-    font-size: 2em;
-}
-
-/* 新增的區域：遊戲評價 */
-#reviews {
-    padding: 20px;
-    background-color: #F8BBD0; /* 淡粉色背景 */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-#reviews h2 {
-    color: #880E4F;
-    font-size: 2em;
-}
-
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 0.9em;
-}
-
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* 結果區 */
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/* 調整頁腳固定 */
-footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-}
+    width: 
