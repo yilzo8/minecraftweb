@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header 部分 */
 header {
     background-color: #4CAF50; /* 草地綠色 */
     color: white;
@@ -49,37 +50,16 @@ p {
     line-height: 1.6;
 }
 
-/* YT 有名人物介紹區域 */
-#streamers {
+/* 遊戲歷史與評價區 */
+#history, #reviews {
     padding: 20px;
     background-color: #e0f7fa;
     border-radius: 10px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.streamer {
-    margin-bottom: 15px;
-}
-
-.streamer h3 {
-    color: #00796b;
-    font-size: 1.8em;
-}
-
-.streamer p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* 測驗區 */
-#quiz {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#quiz h2 {
+#history h2, #reviews h2 {
     color: #00796b;
     font-size: 2em;
 }
@@ -101,26 +81,53 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* 實況主介紹區 */
+#streamers {
+    padding: 20px;
+}
+
+.streamer {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 測驗區 */
+#quiz {
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quiz h2 {
+    color: #00796b;
+    font-size: 2em;
+}
+
+/* Footer 部分 */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative; /* 修改為 relative */
-    width: 100%;
-    font-size: 0.9em;
-    margin-top: 20px; /* 確保 footer 與上方內容有一定的距離 */
+    background-color: #4CAF50; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    text-align: center; /* 文字置中 */
+    padding: 10px 0; /* 上下內邊距 */
+    position: fixed; /* 固定位置 */
+    bottom: 0; /* 底部對齊 */
+    left: 0; /* 左邊對齊 */
+    width: 100%; /* 寬度100% */
+    z-index: 1000; /* 確保在其他元素之上 */
 }
 
 footer a {
-    color: #4CAF50;
-    text-decoration: none;
-    margin-left: 10px;
+    color: white; /* 連結顏色 */
+    text-decoration: none; /* 去掉底線 */
+    margin-left: 10px; /* 左邊距 */
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* 滑鼠懸停時的底線效果 */
 }
 
 #result {
