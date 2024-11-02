@@ -102,4 +102,22 @@ footer {
     padding: 15px;
     position: fixed;
     bottom: 0;
-    width: 
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
