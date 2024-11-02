@@ -72,41 +72,21 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Press Start 2P', sans-serif;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #388e3c;
-    transform: scale(1.05);
+    background-color: #45a049;
 }
 
 /* Footer 部分 */
 footer {
-    background-color: #4CAF50; /* 背景顏色 */
-    color: white; /* 文字顏色 */
-    text-align: center; /* 文字置中 */
-    padding: 10px 0; /* 上下內邊距 */
-    width: 100%; /* 寬度100% */
-    position: relative; /* 相對定位 */
-    margin-top: 20px; /* 確保與上面的內容有間距 */
-}
-
-footer a {
-    color: white; /* 連結顏色 */
-    text-decoration: none; /* 去掉底線 */
-    margin-left: 10px; /* 左邊距 */
-}
-
-footer a:hover {
-    text-decoration: underline; /* 滑鼠懸停時的底線效果 */
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
 }
