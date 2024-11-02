@@ -1,112 +1,15 @@
-/* 全局字體和背景 */
 body {
-    font-family: 'Press Start 2P', sans-serif; /* 使用像素風格字體 */
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    /* 其他樣式 */
+    min-height: 100vh; /* 確保內容至少填滿整個視窗 */
+    display: flex; /* 使用 Flexbox */
+    flex-direction: column; /* 直列排版 */
 }
 
-/* Header 部分 */
-header {
-    background-color: #4CAF50; /* 草地綠色 */
-    color: white;
-    padding: 40px;
-    text-align: center;
+header, section {
+    flex: 1; /* 使每個 section 自動擴展 */
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-p {
-    font-size: 1.2em;
-}
-
-/* 角色介紹區 */
-#characters {
-    padding: 20px;
-}
-
-.character {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #4CAF50;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.character h3 {
-    color: #4CAF50;
-    font-size: 1.8em;
-}
-
-/* 遊戲歷史與評價區 */
-#history, #reviews {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 測驗區 */
-#quiz {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#quiz h2 {
-    color: #00796b;
-    font-size: 2em;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Press Start 2P', sans-serif;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-    background-color: #388e3c;
-    transform: scale(1.05);
-}
-
-/* Footer 部分 */
 footer {
-    background-color: #4CAF50; /* 背景顏色 */
-    color: white; /* 文字顏色 */
-    text-align: center; /* 文字置中 */
-    padding: 10px 0; /* 上下內邊距 */
-    width: 100%; /* 寬度100% */
-    position: relative; /* 相對定位 */
-    margin-top: 20px; /* 確保與上面的內容有間距 */
-}
-
-footer a {
-    color: white; /* 連結顏色 */
-    text-decoration: none; /* 去掉底線 */
-    margin-left: 10px; /* 左邊距 */
-}
-
-footer a:hover {
-    text-decoration: underline; /* 滑鼠懸停時的底線效果 */
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    text-align: center;
+    /* footer 樣式 */
+    margin-top: auto; /* 自動推動 footer 到頁面底部 */
 }
