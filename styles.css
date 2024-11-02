@@ -45,13 +45,8 @@ p {
     font-size: 1.8em;
 }
 
-.character p {
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-/* 遊戲歷史與評價區 */
-#history, #reviews {
+/* 創意建設區 */
+#creativity {
     padding: 20px;
     background-color: #e0f7fa;
     border-radius: 10px;
@@ -59,7 +54,29 @@ p {
     text-align: center;
 }
 
-#history h2, #reviews h2 {
+.gallery img {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 測驗區 */
+#quiz {
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quiz h2 {
     color: #00796b;
     font-size: 2em;
 }
@@ -81,43 +98,13 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 實況主介紹區 */
-#streamers {
-    padding: 20px;
-}
-
-.streamer {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #4CAF50;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 測驗區 */
-#quiz {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#quiz h2 {
-    color: #00796b;
-    font-size: 2em;
-}
-
 /* Footer 部分 */
 footer {
     background-color: #4CAF50; /* 背景顏色 */
     color: white; /* 文字顏色 */
     text-align: center; /* 文字置中 */
     padding: 10px 0; /* 上下內邊距 */
-    position: fixed; /* 固定位置 */
-    bottom: 0; /* 底部對齊 */
-    left: 0; /* 左邊對齊 */
     width: 100%; /* 寬度100% */
-    z-index: 1000; /* 確保在其他元素之上 */
 }
 
 footer a {
@@ -135,3 +122,4 @@ footer a:hover {
     font-size: 1.2em;
     text-align: center;
 }
+
